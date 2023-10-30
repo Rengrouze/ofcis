@@ -1,0 +1,112 @@
+@import 'colors';
+/* Font Family */
+$roboto: 'Roboto', sans-serif;
+$robotoslab: 'Roboto Slab', serif;
+$sniglet: 'Sniglet', cursive;
+
+$text-shadow:-1px -1px 0 $primary-color,
+			1px -1px 0 $primary-color,
+			-1px 1px 0 $primary-color,
+			1px 1px 0 $primary-color;
+
+.el-btn-regular{
+	font-size:14px;
+	color:#fff;
+	background:$primary-color;
+	border:2px solid $primary-color;
+	text-transform:uppercase;
+	padding:13px 25px;
+	border-radius:3px;
+	font-weight: 500 !important;
+	transition:0.3s ease !important;
+	display: inline-block;
+	&:hover{
+		color:$primary-color;
+		background:#fff;
+		border-color:#fff;
+	}
+}
+.el-btn-medium{
+	font-size:15px;
+	color:#fff;
+	background:$primary-color;
+	border:2px solid $primary-color;
+	text-transform:uppercase;
+	padding:20px 50px;
+	border-radius:3px;
+	font-weight: 500 !important;
+	transition:0.3s ease !important;
+	&:hover{
+		color:$primary-color;
+		background:#fff;
+		border-color:#fff;
+	}
+}
+
+.slider-vplay-btn{
+	display: inline-block;
+	position: relative;
+	top: 24px;
+	span{
+		display: table-cell;
+		vertical-align: middle;
+		&:first-child{
+			width: 60px;
+			height: 60px;
+			background: $primary-color;
+			border-radius: 100px;
+			color: #fff;
+			font-size: 20px;
+			text-align: center !important;
+		}
+		&:last-child{
+			padding-left: 15px;
+			width: 120px;
+			font-size: 20px;
+			font-family: $robotoslab;
+			color: #fff;
+		}
+	}
+}
+
+
+.kids-btn{
+	background-image: url("../images/kindergarten/btn-bg.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 2px solid #b5d56a;
+	border-radius: 0;
+	color: #b5d56a;
+	margin-top: 25px;
+	position: relative;
+	display:inline-block;
+	padding:15px 30px;
+	font-size:20px;
+	&:before{
+		background: #e6e6e6;
+		border: 2px solid #b5d56a;
+		content: "";
+		height: 100%;
+		left: 10px;
+		position: absolute;
+		top: 10px;
+		width: 100%;
+		z-index: -1;
+		transition:0.3s ease;
+	}
+	&:hover{
+		color:#b5d56a;
+		&:before{
+			left:0;
+			top:0;
+		}
+	}
+}
+.kg-slider-btn{
+	background: #b5d56a;
+	border-color: #b5d56a;
+	&:hover{
+		color: $yellow-green;
+	}
+}
